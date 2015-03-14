@@ -7,12 +7,23 @@
 
 <body>
 <h1>Demo - Action</h1>
-<p>Coming soon...</p>
+<button data-action="console">Test Button</button>
+<button data-action="alert">Alert Button</button>
 
-<script src="../bower_components/jquery/dist/jquery.js"></script>
+
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 <script src="../src/action.js"></script>
 <script>
 'use strict'
+
+action.add({
+	'console': function() {
+		console.log("Bind Successfully!");
+	},
+	'alert': function() {
+		alert("Bind Successfully!");
+	}
+})
 
 </script>
 </body>
